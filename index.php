@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Список дел</h1>
@@ -15,7 +17,16 @@
             <input type="text" name="task" id="task" placeholder="Нужно сделать" class="form-control">
             <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
         </form>
+        <?php
+        require 'showTasks.php';
+        foreach ($tasks as $task) :
+        ?>
 
+            <ul>
+                <li><b><?php echo $task; ?></b></li>
+            </ul>
+        <?php endforeach; ?>
     </div>
 </body>
+
 </html>
