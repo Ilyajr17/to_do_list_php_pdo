@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Списописк дел</h1>
+        <h1>Список дел</h1>
         <form action="/add.php" method="POST">
             <input type="text" name="task" id="task" placeholder="Нужно сделать" class="form-control">
             <button type="submit" name="sendTask" class="btn btn-success">Отправить</button>
