@@ -21,9 +21,8 @@
         require 'showTasks.php';
         foreach ($tasks as $task) :
         ?>
-
             <ul>
-                <li><b><?php echo $task; ?></b></li>
+                <li><b><?php echo $task->task; ?></b><a href="/delete.php?id=<?php echo $task->id;?>"><button>Удалить</button></a></li>
             </ul>
         <?php endforeach; ?>
     </div>
