@@ -1,1 +1,3 @@
-# to_do_list_php_pdo
+# приложение Список дел
+
+PHP, PDO и MySQ
